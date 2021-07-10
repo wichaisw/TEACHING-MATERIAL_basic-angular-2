@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { JsonPlaceholderRoutingModule } from './json-placeholder-routing.module';
 import { JsonPlaceholderComponent } from './json-placeholder.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import { JsonPlaceholderComponent } from './json-placeholder.component';
   ],
   imports: [
     CommonModule,
+    SharedModule,
     JsonPlaceholderRoutingModule
   ]
 })
