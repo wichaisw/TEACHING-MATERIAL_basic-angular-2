@@ -10,6 +10,9 @@ import { PrimaryButtonComponent } from './components/primary-button/primary-butt
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    PrimaryButtonComponent
   ]
 })
 export class SharedModule { }

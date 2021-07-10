@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './modules/login/login.component';
-import { ToDoListComponent } from './modules/to-do-list/to-do-list.component';
 
 const routes: Routes = [
   {
     path: 'to-do-list',
-    component: ToDoListComponent
+    loadChildren: () => import('./modules/to-do-list/to-do-list.module').then(m => m.ToDoListModule)
   },
   {
     path: 'login',
-    component: LoginComponent
+    loadChildren: () => import('./modules/login/login.module').then(m => m.LoginModule)
   },
   {
     path: '**', 
