@@ -12,8 +12,12 @@ const routes: Routes = [
     loadChildren: () => import('./modules/login/login.module').then(m => m.LoginModule)
   },
   {
+    path: 'json-placeholder',
+    loadChildren: () => import('./modules/json-placeholder/json-placeholder.module').then(m => m.JsonPlaceholderModule)
+  },
+  {
     path: '**', 
-    redirectTo: '/login',
+    redirectTo: 'login',
   },
 ];
 

@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PrimaryButtonComponent implements OnInit {
   @Input() buttonMessage: string = '';
+  @Input() isLoading: boolean = false;
 
   constructor() { }
 

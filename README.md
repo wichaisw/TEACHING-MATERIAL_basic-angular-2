@@ -31,7 +31,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * provide date-format (optional)
 
 **Http Client** (RxJs) (part2)
-* synchronous with Oberservable
+* synchronous with Observable
 
 **Routing** (optional) (part2)
 * authGuard
