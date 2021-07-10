@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { JsonPlaceholderService } from 'src/app/core/services/json-placeholder.service';
+import { PlaceholderPost } from 'src/app/shared/interfaces/placeholder-post';
 @Component({
   selector: 'app-json-placeholder',
   templateUrl: './json-placeholder.component.html',
@@ -8,7 +9,7 @@ import { JsonPlaceholderService } from 'src/app/core/services/json-placeholder.s
 })
 export class JsonPlaceholderComponent implements OnInit {
   isFetching: boolean = false;
-  posts: any[] = [];
+  posts: PlaceholderPost[] = [];
 
   constructor(
     private jsonPlaceholderService: JsonPlaceholderService,
