@@ -36,6 +36,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 **Routing** (optional) (part2)
 * authGuard
 * Lazy-loading
+* ng g m app-routing --flat --module=app (add rout routing to existing project)
 
 **Module Structure** (part2)
 * Core Module (services, header, sidebar, interceptor)
